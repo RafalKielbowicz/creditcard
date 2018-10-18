@@ -17,4 +17,13 @@ public class CreditCardTest {
     public void rejectWithdrawOverLimit() {
         
     }
+    
+    @Test
+    public void repayCredit() {
+        CreditCard card = new CreditCard;
+        
+        card.withdraw(1000);
+        
+        Assert.assertTrue(card.getSaldo() == 1000);
+    }
 }
